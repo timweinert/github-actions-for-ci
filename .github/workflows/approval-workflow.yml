@@ -1,3 +1,5 @@
+name: Teams awesome's approval workflow
+=======
 name: Team awesome's approval workflow
 on: pull_request_review
 jobs:
@@ -7,6 +9,6 @@ jobs:
       - name: Approval
       - uses: pullreminders/label-when-approved@main
         env:
-          APPROVALS: "2"
+          APPROVALS: "1"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ADD_LABEL: "approved"
